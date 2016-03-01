@@ -10,7 +10,8 @@ void main_deinit() {
     return;
   window_stack_pop_all(false);
   APP_LOG(APP_LOG_LEVEL_DEBUG, "Finished pop");
-  welcome_deinit();
+ // welcome_deinit();
+  prerun_deinit();
   APP_LOG(APP_LOG_LEVEL_DEBUG, "Finished main");
   finished = true;
 }

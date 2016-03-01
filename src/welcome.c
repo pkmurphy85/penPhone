@@ -1,4 +1,4 @@
-#include <pebble.h>
+/*#include <pebble.h>
 #include "welcome.h"
 #include "prerun.h"
 
@@ -37,4 +37,4 @@ void welcome_deinit(){
   text_layer_destroy(text_layer);
   window_destroy(window);
   APP_LOG(APP_LOG_LEVEL_DEBUG, "Finished welcome");
-}
+}*/

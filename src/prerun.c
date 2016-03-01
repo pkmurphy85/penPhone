@@ -25,7 +25,7 @@ void prerun_init(){
   window = window_create();
   text_layer = text_layer_create(layer_get_bounds(window_get_root_layer(window)));
 	static char text[256];
-	snprintf(text, 256, "Ready to go! - \n\nThis sensor will monitor your motion. Press any button on the right to begin logging.");
+	snprintf(text, 256, "Welcome to penPhone! - \n\nThis app will monitor your motion. Press any button on the right to begin logging.");
 	text_layer_set_text(text_layer, text);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(text_layer));
 	

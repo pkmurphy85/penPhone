@@ -3,15 +3,20 @@
     "capabilities": [
         ""
     ],
-    "companyName": "jbakita@cs.unc.edu",
+    "companyName": "pkmurphy85@gmail.com",
     "enableMultiJS": false,
-    "longName": "Pebble Accelerometer Logging",
+    "longName": "penPhone",
     "projectType": "native",
     "resources": {
         "media": []
     },
     "sdkVersion": "3",
-    "shortName": "Pebble Accelerometer Logging",
+    "shortName": "penPhone",
+    "targetPlatforms": [
+        "aplite",
+        "basalt",
+        "chalk"
+    ],
     "uuid": "631b528e-c553-486c-b5ac-da08f63f01de",
     "versionLabel": "1.0",
     "watchapp": {
