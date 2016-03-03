@@ -1,5 +1,4 @@
 #include <pebble.h>
-#include "welcome.h"
 #include "prerun.h"
 //TEST
   
