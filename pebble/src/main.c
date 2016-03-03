@@ -1,6 +1,7 @@
 #include <pebble.h>
 #include "welcome.h"
 #include "prerun.h"
+//TEST
   
 // Flag variable to protect from double frees
 static int finished = false;
