@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Patrick/AndroidStudioProjects/pebble-accel-revision/Accel-android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
+        <dex dex="/Users/Patrick/AndroidStudioProjects/pebble-accel-revision/Accel-android/app/build/intermediates/pre-dexed/debug/classes-e8e3a4e762a25bb6e79ae1a1b17f2d77f0f834c0.jar" />
+    </item>
+    <item
+        jar="/Users/Patrick/AndroidStudioProjects/pebble-accel-revision/Accel-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/Patrick/AndroidStudioProjects/pebble-accel-revision/Accel-android/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-7ac3414137781cc462f9b19fcb25f7acecb7aea8.jar" />
+    </item>
+    <item
+        jar="/Users/Patrick/AndroidStudioProjects/pebble-accel-revision/Accel-android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="97f7e239e86ef994de894818fdd8a71d2e89d6aa">
+        <dex dex="/Users/Patrick/AndroidStudioProjects/pebble-accel-revision/Accel-android/app/build/intermediates/pre-dexed/debug/classes-ee47dca8b329ee6233b4bb129a773d6a75fb913a.jar" />
+    </item>
+    <item
+        jar="/Users/Patrick/AndroidStudioProjects/pebble-accel-revision/Accel-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/Patrick/AndroidStudioProjects/pebble-accel-revision/Accel-android/app/build/intermediates/pre-dexed/debug/classes-85624b67cf9e30824d40a8718e941735e8f0cd8f.jar" />
+    </item>
+    <item
+        jar="/Users/Patrick/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/Patrick/AndroidStudioProjects/pebble-accel-revision/Accel-android/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-47a599b317312fb7dbde063a98b513717b65e751.jar" />
+    </item>
+    <item
+        jar="/Users/Patrick/AndroidStudioProjects/pebble-accel-revision/Accel-android/app/build/intermediates/exploded-aar/com.getpebble/pebblekit/3.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bd72bf60a6e56573eecb0e6abf419fac2b1fc1e6">
+        <dex dex="/Users/Patrick/AndroidStudioProjects/pebble-accel-revision/Accel-android/app/build/intermediates/pre-dexed/debug/classes-7dc0a1aaf1661dec3a65f4f4acdbcc349ad5f131.jar" />
+    </item>
+    <item
+        jar="/Users/Patrick/AndroidStudioProjects/pebble-accel-revision/Accel-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/Patrick/AndroidStudioProjects/pebble-accel-revision/Accel-android/app/build/intermediates/pre-dexed/debug/classes-b4947062380ba0a6014dc67904f2b9b25dbf2e18.jar" />
+    </item>
+
+</items>
