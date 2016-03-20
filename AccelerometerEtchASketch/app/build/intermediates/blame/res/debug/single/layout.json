@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/luke/AndroidStudioProjects/AccelerometerEtchASketch/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/luke/AndroidStudioProjects/AccelerometerEtchASketch/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/luke/AndroidStudioProjects/AccelerometerGolf/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/luke/AndroidStudioProjects/AccelerometerGolf/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/luke/git/penPhone/AccelerometerEtchASketch/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/luke/git/penPhone/AccelerometerEtchASketch/app/src/main/res/layout/activity_main.xml"
+    }
+]
