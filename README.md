@@ -9,3 +9,15 @@ Known issues:
 Phone Accelometer :
 
 http://www.appsrox.com/android/tutorials/accelerometer-golf/
+
+
+AccelerometerEtchASketch - Tasks Remaining
+
+- [ ] Remove starting line
+- [ ] Add shake to reset
+- [ ] Replace ball image
+- [ ] Adjust to white background and black line
+- [ ] Use gravity-filtered sensor outputs (incl'd in Android API)
+- [ ] Calculate relative position for flat phone no-rotation case
+ 
+
