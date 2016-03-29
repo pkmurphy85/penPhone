@@ -3,13 +3,14 @@
   <component name="FacetManager">
     <facet type="android" name="Android">
       <configuration>
-        <option name="GEN_FOLDER_RELATIVE_PATH_APT" value="/../../AccelerometerGolf/gen" />
-        <option name="GEN_FOLDER_RELATIVE_PATH_AIDL" value="/../../AccelerometerGolf/gen" />
-        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/../../AccelerometerGolf/AndroidManifest.xml" />
-        <option name="RES_FOLDER_RELATIVE_PATH" value="/../../AccelerometerGolf/res" />
-        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/../../AccelerometerGolf/assets" />
-        <option name="LIBS_FOLDER_RELATIVE_PATH" value="/../../AccelerometerGolf/libs" />
-        <option name="PROGUARD_LOGS_FOLDER_RELATIVE_PATH" value="/../../AccelerometerGolf/proguard_logs" />
+        <option name="GEN_FOLDER_RELATIVE_PATH_APT" value="/../gen" />
+        <option name="GEN_FOLDER_RELATIVE_PATH_AIDL" value="/../gen" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/../AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/../res" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/../assets" />
+        <option name="LIBS_FOLDER_RELATIVE_PATH" value="/../libs" />
+        <option name="APK_PATH" value="/../../../../../../AndroidStudioProjects/AccelerometerGolf/bin" />
+        <option name="PROGUARD_LOGS_FOLDER_RELATIVE_PATH" value="/../proguard_logs" />
       </configuration>
     </facet>
   </component>

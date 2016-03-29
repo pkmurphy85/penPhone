@@ -41,6 +41,11 @@ public class SimulationView extends View implements SensorEventListener {
     private float mSensorX;
     private float mSensorY;
     private float mSensorZ;
+
+	private float gravityX;
+	private float gravityY;
+	private float gravityZ;
+
     private long mSensorTimeStamp;
     
     private Particle mBall = new Particle();
@@ -92,26 +97,32 @@ public class SimulationView extends View implements SensorEventListener {
 	public void onSensorChanged(SensorEvent event) {
         if (event.sensor.getType() != Sensor.TYPE_ACCELEROMETER)
             return;
-        
-		switch (mDisplay.getRotation()) {
-		case Surface.ROTATION_0:
-			mSensorX = event.values[0];
-			mSensorY = event.values[1];
-			break;
-		case Surface.ROTATION_90:
-			mSensorX = -event.values[1];
-			mSensorY = event.values[0];
-			break;
-		case Surface.ROTATION_180:
-			mSensorX = -event.values[0];
-			mSensorY = -event.values[1];
-			break;
-		case Surface.ROTATION_270:
-			mSensorX = event.values[1];
-			mSensorY = -event.values[0];
-			break;
+
+		final float alpha = 0.9f;
+		gravityX = alpha * gravityX + (1 - alpha) * event.values[0];
+		gravityY = alpha * gravityY + (1 - alpha) * event.values[1];
+		gravityZ = alpha * gravityZ + (1 - alpha) * event.values[2];
+
+		float holderZ = Math.abs(event.values[0] - gravityX);
+		float holderX = Math.abs(event.values[1] - gravityY);
+		float holderY = Math.abs(event.values[2] - gravityZ);
+		//phone on its side, screen perpendicular to ground
+		if(gravityX > 9.5 || gravityX < -9.5) {
+			//if(holderZ > holderX && holderZ > holderY )
+				mSensorZ = event.values[0] - gravityX;
+				//else if (holderY > holderX && holderY > holderZ)
+				mSensorY = event.values[2] - gravityZ;
+				//else if (holderX > holderY && holderX > holderZ)
+				mSensorX = event.values[1] - gravityY;
+			}
+		else{
+			mSensorZ = 0;
+			mSensorY = 0;
+			mSensorX = 0;
 		}
-		mSensorZ = event.values[2];
+		//mSensorX = event.values[0];
+		//mSensorY = event.values[1];
+		//mSensorZ = event.values[2];
 		mSensorTimeStamp = event.timestamp;
 
 	}

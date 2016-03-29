@@ -12,11 +12,10 @@ public class Particle {
     
     public void updatePosition(float sx, float sy, float sz, long timestamp) {
     	float dt = (System.nanoTime() - timestamp) / 1000000000.0f;
-    	mVelX += -sx * dt;
-    	mVelY += -sy * dt;
-    	
-    	mPosX += mVelX * dt;
-    	mPosY += mVelY * dt;
+    	//mVelX += -sx/ 10000000000.0f * dt;
+    	//mVelY += -sy/ 10000000000.0f * dt;
+    	mPosX += -sx/ 5000.0f * dt;
+    	mPosY += -sy/ 10000.0f * dt;
     }
     
     public void resolveCollisionWithBounds(float mHorizontalBound, float mVerticalBound) {
