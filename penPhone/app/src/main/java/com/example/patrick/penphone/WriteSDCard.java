@@ -1,7 +1,10 @@
 package com.example.patrick.penphone;
 
+import android.content.Context;
+import android.graphics.Paint;
 import android.os.Environment;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -21,6 +24,12 @@ public class WriteSDCard {
      * Method to check whether external media available and writable. This is adapted from
      * http://developer.android.com/guide/topics/data/data-storage.html#filesExternal
      */
+
+    private static Context context;
+    public WriteSDCard(Context c) {
+        context = c;
+    }
+
 
     public void checkExternalMedia() {
         boolean mExternalStorageAvailable = false;
@@ -45,12 +54,12 @@ public class WriteSDCard {
     }
 
     //currently write magnitude of fft of x, y, and z data to new file. Need to prepare data for SVM and append to same file
-    public void writeToSDFile(ArrayList<Double> xfftMag, ArrayList<Double> yfftMag, ArrayList<Double> zfftMag) {
+    public void writeToSDFile(CharSequence letter, ArrayList<Double> xfftMag, ArrayList<Double> yfftMag, ArrayList<Double> zfftMag) {
         try {
 
             File dir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getAbsolutePath() + "/svmTestSamples/");
             dir.mkdir();
-
+            //Change file to one training set file for svm
             File file = new File(dir, DateFormat.getDateTimeInstance().format(new Date()) + ".csv");
             FileOutputStream outputStream = new FileOutputStream(file);
 
@@ -65,6 +74,15 @@ public class WriteSDCard {
             out.println(TestString);
             out.flush();
             out.close();
+            if(!out.checkError()) {
+
+                //Context context = getA;
+                CharSequence text = letter + " saved to training set";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

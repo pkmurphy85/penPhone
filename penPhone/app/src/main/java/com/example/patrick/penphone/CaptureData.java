@@ -2,7 +2,9 @@ package com.example.patrick.penphone;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.graphics.Paint;
 import android.hardware.Sensor;
@@ -36,6 +38,7 @@ public class CaptureData extends Activity implements SensorEventListener,
     protected ArrayList<Double> xfftMag;
     protected ArrayList<Double> yfftMag;
     protected ArrayList<Double> zfftMag;
+    protected CharSequence selectedLetter;
 
     public ArrayList getSensorData() {
         return sensorData;
@@ -120,10 +123,21 @@ public class CaptureData extends Activity implements SensorEventListener,
                 btnUpload.setEnabled(true);
                 started = false;
                 sensorManager.unregisterListener(this);
+                final CharSequence[] letters = {"A","B","C"};
+                AlertDialog.Builder letterDialog = new AlertDialog.Builder(CaptureData.this);
+                letterDialog.setTitle("Which letter did you draw");
+                letterDialog.setItems(letters, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // The 'which' argument contains the index position
+                        // of the selected item
+                        selectedLetter = letters[which];
+                    }
+                });
 
+                letterDialog.show();
                 break;
             case R.id.btnUpload:
-                //this is where we can save to sd card
+                //Permissions required for Marshmallow
                 if (ContextCompat.checkSelfPermission(CaptureData.this,
                         Manifest.permission.WRITE_EXTERNAL_STORAGE)
                         != PackageManager.PERMISSION_GRANTED) {
@@ -178,8 +192,8 @@ public class CaptureData extends Activity implements SensorEventListener,
 
 
                 calcFFT(sensorData);
-                WriteSDCard sdCard = new WriteSDCard();
-                sdCard.writeToSDFile(xfftMag,yfftMag,zfftMag);
+                WriteSDCard sdCard = new WriteSDCard(getApplicationContext());
+                sdCard.writeToSDFile(selectedLetter, xfftMag,yfftMag,zfftMag);
                 break;
             default:
                 break;
