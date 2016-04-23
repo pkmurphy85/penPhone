@@ -44,7 +44,7 @@ public class WriteSDCard {
         }
     }
 
-    //currently write fft of x, y, and z data to file. Need to take magnitude
+    //currently write magnitude of fft of x, y, and z data to new file. Need to prepare data for SVM and append to same file
     public void writeToSDFile(ArrayList<Double> xfftMag, ArrayList<Double> yfftMag, ArrayList<Double> zfftMag) {
         try {
 

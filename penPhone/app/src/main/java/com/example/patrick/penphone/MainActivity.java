@@ -23,8 +23,11 @@ import android.support.v7.widget.Toolbar;
 import com.example.patrick.penphone.CaptureData;
 import com.example.patrick.penphone.R;
 
+import org.opencv.ml.SVM;
+
 public class MainActivity extends Activity {
 
+    static{ System.loadLibrary("opencv_java3"); }
 
     private Button btnCapture, btnTrain, btnWrite;
     private static final int MY_PERMISSIONS_REQUEST_EXTERNAL_STORAGE = 0;
@@ -42,7 +45,6 @@ public class MainActivity extends Activity {
         btnCapture.setEnabled(true);
         btnTrain.setEnabled(true);
         btnWrite.setEnabled(true);
-
     }
 
     @Override
@@ -59,8 +61,7 @@ public class MainActivity extends Activity {
         btnTrain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent trainIntent = new Intent(MainActivity.this, MySVM.class);
-                //startActivity(trainIntent);
+                //Add new activity here for SVM training and classification
 
             }
         });
@@ -68,6 +69,7 @@ public class MainActivity extends Activity {
         btnWrite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Add new activity here to make predicitons on samples and print output to canvas
 
             }
         });
