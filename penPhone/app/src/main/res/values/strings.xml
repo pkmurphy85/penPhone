@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">penPhone</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_capture_data">CaptureData</string>
+    <string name="title_activity_android_libsvm_example">AndroidLibsvmExampleActivity</string>
+    <string name="title_activity_svm">SVMActivity</string>
+    <string name="title_activity_my_svm">MySVM</string>
+</resources>
