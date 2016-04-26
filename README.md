@@ -15,7 +15,7 @@ Strategy 1 Conclusion: The noise problem proved intractable. Because we are doub
 In Strategy 2 we limit our functionality. We want to recognize a character A-Z drawn by the phone using the accelerometer data. The development strategy of this app is encapsulated in two Android apps developed for capturing and processing accelerometer data. 
 
   * penPhone (Patricks' app)
-  * Xiayu's App
+  * src (Xiayu's App)
 
 The two Strategy 2 apps were developed in Android Studio 1.5 and use Gradle. You should be able to download and run the apps using the same process mentioned above for the Strategy 1 app. 
 
